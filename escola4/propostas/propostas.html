@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.PNG">
+    <title>Propostas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body id="body">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="img/logo.PNG" alt="Logo GN" class="img_logo_header">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="../index.html"><i class="fa fa-home" style="font-size:18px"></i> Home</a>
+            <a href="../quem somos/quem somos.html"><i class="fa fa-child" style="font-size:18px"></i> Quem somos?</a>
+            <a href="../propostas/propostas.html" class="active"><i class="fa fa-suitcase" style="font-size:18px"></i> Propostas</a>
+            <a href="../disciplinas/disciplinas.html"><i class="fa fa-book" style="font-size:18px"></i> Disciplinas</a>
+            <a href="https://www.instagram.com/gremio_ngc/" target="_self"><i class="fa fa-instagram" style="font-size: 18px;"></i> instagram</a>
+        </div>
+    </div>
+    <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+        <div id="primeiro_paragrafo">
+        <h1 align="center">Rodas de conversas</h1>   
+
+        
+            <p align="center">
+        		OBJETIVO:Fazer com que os alunos consigam se expressar e aprender em conjunto
+                </p>
+                <p align="center">&nbsp;
+                </p>
+
+
+            <h1 align="center">Palestras</h1> 
+            <p align="center">
+        		
+                • Emocional, temáticas, educacionais, etc.<br>
+                </p>
+                <p align="center">&nbsp;
+                </p>
+
+
+            <h1 align="center">Reforço escolar</h1>   
+            <p align="center">
+        		Disponibilizar conteúdos no drive para estudar nas provas e simulados (6ª-9ª)
+                </p>
+                <p align="center">&nbsp;
+                </p>
+				
+				<p>&nbsp;
+				</p>
+				
+
+
+            <h1 align="center">Reforço ministrado pelos alunos</h1>   
+            <p align="center">
+        		O intuito é ajudar os alunos que não conseguiram pegar o conteudo ou que estão com dificuldades
+                </p>
+                <p align="center">ㅤ
+                </p>
+
+                <h1 align="center">Arrecadação</h1>
+                <p align="center">
+        		Venda de doces <br>
+                • Bolos <br>
+                • Brigadeiros <br>
+                • Trufas <br>
+                • Brownies <br>
+                <p align="center">ㅤ
+                </p>
+
+                Em datas comemorativas <br>
+                • Festa Junina <br>
+                • Dia os namorados <br>
+                • Halloween <br>
+                • Natal <br>
+                </p>
+                <p align="center">
+                    Fundos de investimetos para eduação Física
+                    </p>
+                    <p align="center">ㅤ
+                    </p>
+    
+
+            <h1 align="center">Radio no interalo</h1> 
+            <p align="center">
+        		
+                Será dividido por dias | salas<br>
+                </p>
+                <p align="center">ㅤ
+                </p>
+
+
+            <h1 align="center">Campanhas</h1>   
+            <p align="center">
+        		• Agasalho <br>
+                • Alimentos <br>
+                • Ração <br>
+                • Produtos De limpeza <br>
+                </p>
+                <p align="center">ㅤ
+                </p>
+
+            <h1 align="center">Concursos de desenho e pintura desafio de soletrar </h1>   
+            <p align="center">
+        		tema: copa do mundo <br>
+                Concurso de maquiagem (hallowen)
+                </p>
+        	</div>
+
+
+</body>
+
+<script>
+    var header           = document.getElementById('header');
+    var navigationHeader = document.getElementById('navigation_header');
+    var content          = document.getElementById('content');
+    var showSidebar      = false;
+
+    function toggleSidebar()
+    {
+        showSidebar = !showSidebar;
+        if(showSidebar)
+        {
+            navigationHeader.style.marginLeft = '-10vw';
+            navigationHeader.style.animationName = 'showSidebar';
+            content.style.filter = 'blur(2px)';
+        }
+        else
+        {
+            navigationHeader.style.marginLeft = '-100vw';
+            navigationHeader.style.animationName = '';
+            content.style.filter = '';
+        }
+    }
+
+    function closeSidebar()
+    {
+        if(showSidebar)
+        {
+            showSidebar = true;
+            toggleSidebar();
+        }
+    }
+
+    window.addEventListener('resize', function(event) {
+        if(window.innerWidth > 768 && showSidebar) 
+        {  
+            showSidebar = true;
+            toggleSidebar();
+        }
+    });
+
+
+</script>
+</html>
